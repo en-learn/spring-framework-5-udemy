@@ -4,13 +4,13 @@ import com.eliasnorrby.springdi.services.GreetingServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class ContructorInjectedControllerTest {
+class ConstructorInjectedControllerTest {
 
-  ContructorInjectedController controller;
+  ConstructorInjectedController controller;
 
   @BeforeEach
   void setUp() {
-    controller = new ContructorInjectedController(new GreetingServiceImpl());
+    controller = new ConstructorInjectedController(new GreetingServiceImpl());
   }
 
   @Test
