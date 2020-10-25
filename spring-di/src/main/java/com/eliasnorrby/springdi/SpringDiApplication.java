@@ -1,6 +1,7 @@
 package com.eliasnorrby.springdi;
 
 import com.eliasnorrby.springdi.controllers.ConstructorInjectedController;
+import com.eliasnorrby.springdi.controllers.I18nController;
 import com.eliasnorrby.springdi.controllers.MyController;
 import com.eliasnorrby.springdi.controllers.PropertyInjectedController;
 import com.eliasnorrby.springdi.controllers.SetterInjectedController;
@@ -13,6 +14,9 @@ public class SpringDiApplication {
 
   public static void main(String[] args) {
     ApplicationContext ctx = SpringApplication.run(SpringDiApplication.class, args);
+
+    I18nController i18nController = (I18nController) ctx.getBean("i18nController");
+    System.out.println(i18nController.sayHello());
 
     System.out.println("---- Primary Bean");
     MyController myController = (MyController) ctx.getBean("myController");
