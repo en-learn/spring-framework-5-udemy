@@ -1,6 +1,6 @@
 package com.eliasnorrby.springdi.controllers;
 
-import com.eliasnorrby.springdi.services.GreetingServiceImpl;
+import com.eliasnorrby.springdi.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,7 @@ class SetterInjectedControllerTest {
   @BeforeEach
   void setUp() {
     controller = new SetterInjectedController();
-    controller.setGreetingService(new GreetingServiceImpl());
+    controller.setGreetingService(new ConstructorGreetingService());
   }
 
   @Test

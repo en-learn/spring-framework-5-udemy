@@ -1,6 +1,6 @@
 package com.eliasnorrby.springdi.controllers;
 
-import com.eliasnorrby.springdi.services.GreetingServiceImpl;
+import com.eliasnorrby.springdi.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,7 @@ class PropertyInjectedControllerTest {
   @BeforeEach
   void setUp() {
     controller = new PropertyInjectedController();
-    controller.greetingService = new GreetingServiceImpl();
+    controller.greetingService = new ConstructorGreetingService();
   }
 
   @Test
