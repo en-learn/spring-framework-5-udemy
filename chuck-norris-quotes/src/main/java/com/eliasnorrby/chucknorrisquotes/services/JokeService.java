@@ -1,5 +1,5 @@
 package com.eliasnorrby.chucknorrisquotes.services;
 
-public interface QuoteService {
+public interface JokeService {
   String getQuote();
 }
