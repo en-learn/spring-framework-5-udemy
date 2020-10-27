@@ -14,7 +14,7 @@
   </parent>
   <groupId>com.eliasnorrby</groupId>
   <artifactId>spring-petclinic</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2-SNAPSHOT</version>
   <name>spring-petclinic</name>
   <description>SFG Pet Clinic Project</description>
 
@@ -41,7 +41,7 @@
 
   <scm>
     <developerConnection>scm:git:https://github.com/en-learn/spring-framework-5-udemy.git</developerConnection>
-    <tag>spring-petclinic-0.0.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
 </project>
