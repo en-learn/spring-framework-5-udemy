@@ -1,10 +1,10 @@
 package com.eliasnorrby.springpetclinic.services.map;
 
 import com.eliasnorrby.springpetclinic.model.Pet;
+import com.eliasnorrby.springpetclinic.services.PetService;
 import java.util.Set;
-import com.eliasnorrby.springpetclinic.services.CrudService;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
   @Override
   public Set<Pet> findAll() {
