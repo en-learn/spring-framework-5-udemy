@@ -3,7 +3,9 @@ package com.eliasnorrby.springpetclinic.services.map;
 import com.eliasnorrby.springpetclinic.model.Owner;
 import com.eliasnorrby.springpetclinic.services.OwnerService;
 import java.util.Set;
+import org.springframework.stereotype.Service;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long>
     implements OwnerService {
 
