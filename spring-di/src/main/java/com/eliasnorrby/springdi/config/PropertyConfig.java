@@ -16,7 +16,7 @@ public class PropertyConfig {
   Environment env;
 
   @Value("${guru.username}")
-  String user;
+  String username;
 
   @Value("${guru.password}")
   String password;
@@ -27,7 +27,7 @@ public class PropertyConfig {
   @Bean
   public FakeDataSource fakeDataSource() {
     FakeDataSource fakeDataSource = new FakeDataSource();
-    fakeDataSource.setUser(env.getProperty("USERNAME"));
+    fakeDataSource.setUsername(env.getProperty("USERNAME"));
     fakeDataSource.setPassword(password);
     fakeDataSource.setUrl(url);
     return fakeDataSource;

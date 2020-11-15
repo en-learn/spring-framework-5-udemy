@@ -1,16 +1,16 @@
 package com.eliasnorrby.springdi.examplebeans;
 
 public class FakeDataSource {
-  private String User;
+  private String username;
   private String password;
   private String url;
 
-  public String getUser() {
-    return User;
+  public String getUsername() {
+    return username;
   }
 
-  public void setUser(String user) {
-    User = user;
+  public void setUsername(String username) {
+    this.username = username;
   }
 
   public String getPassword() {

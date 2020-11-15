@@ -17,7 +17,7 @@ public class SpringDiApplication {
 
     FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
 
-    System.out.println(fakeDataSource.getUser());
+    System.out.println(fakeDataSource.getUsername());
     System.out.println(fakeDataSource.getPassword());
   }
 }
