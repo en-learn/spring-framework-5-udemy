@@ -3,7 +3,7 @@ package com.eliasnorrby.springdi.services;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-@Profile({"ES", "default"})
+@Profile({"es", "default"})
 @Service("i18nService")
 public class I18nSpanishGreetingService implements GreetingService {
 
